@@ -1,0 +1,29 @@
+//Nikol Constanza Eskin Cabrera
+//Fundamentos de programación 
+//Grupo 36
+//Escribe un programa que pida las horas trabajadas por un empleado en la semana y su pago por hora.
+//El programa debe calcular y mostrar en pantalla el sueldo bruto, la retencion por impusestos (12%) y el sueldo neto final.
+
+#include <iostream>
+
+int main()
+{
+float horas, pago, sueldo, impuesto, total;
+printf("Introduzca las horas que trabajó el empleado");
+scanf("%f",&horas);
+
+printf("Introduzca el pago por hora");
+scanf("%f",&pago);
+
+sueldo = horas*pago;
+
+impuesto = sueldo*0.12;
+
+total = sueldo-impuesto;
+
+printf("El sueldo es %f\n", sueldo);
+printf("El impuesto es %f\n", impuesto);
+printf("El total del sueldo es %f\n", total);
+
+    return 0;
+}
